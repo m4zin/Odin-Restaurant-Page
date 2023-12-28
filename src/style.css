@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Patrick Hand', cursive;
+}
+
+body {
+    height: 100vh;
+}
+
+body #content,
+body #content nav {
+    display: grid;
+}
+
+body #content {
+    height: inherit;
+    grid-template-rows: min-content 1fr;
+}
+
+body #content nav {
+    grid-template-columns: 5% 1fr;
+    padding: 10px;
+    z-index: 0;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+body #content nav img {
+    height: 100px;
+    width: 100px;
+    justify-self: center;
+    align-self: center;
+}
+
+body #content nav .nav-content,
+body #content nav .nav-content ul {
+    display: flex;
+}
+
+body #content nav .nav-content {
+    justify-content: center;
+    align-items: center;
+}
+
+body #content nav .nav-content ul {
+    gap: 200px;
+    list-style: none;
+}
+
+body #content nav .nav-content li button,
+body #content .menu-page .item button {
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 15px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+body #content nav .nav-content li button:active,
+body #content .menu-page .item button:active {
+    transform: scale(0.95);
+}
+
+/* For home page. */
+body #content .home-page,
+body #content .home-page .bucket-and-quote {
+    display: grid;
+}
+
+body #content .home-page {
+    background-color: #f3f4f6;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+body #content .home-page .bucket-and-quote {
+    width: 75%;
+    grid-template-columns: 1fr 1.75fr;
+}   
+
+body #content .home-page .bucket-and-quote img {
+    border-right: 4px solid red;
+}
+
+body #content .home-page .bucket-and-quote p {
+    font-size: 40px;
+    color: #09090b;
+    align-self: center;
+    text-align: center;
+}
+
+/* For menu */
+body #content .menu-page {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    background-color: #f3f4f6;
+}
+
+body #content .menu-page .item {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 400px;
+    border: none;
+    background-color: #f8fafc;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+body #content .menu-page .item img {
+    height: 250px;
+    width: 250px;
+}
+
+/* For contact page */
+body #content .contact-page {
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body #content .contact-page .contact-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 50%;
+    min-width: 40%;
+    background-color: #f8fafc;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+body #content .contact-page .contact-card img {
+    height: 300px;
+    width: 500px;
+}
