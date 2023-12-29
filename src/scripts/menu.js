@@ -5,9 +5,6 @@ import cockImg from '../imgs/item_pic_4.png'
 
 const addMenuPage = () => {
 
-    const homePage = document.querySelector('.home-page')
-    homePage.style.display = 'none'
-
     const menuPage = document.createElement('div')
     menuPage.className = 'menu-page'
 
